@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box
+}
+
+
+/* Style the tab */
+
+body {
+    height: 2000px;
+    background-color: #ddd;
+    font-size: .8em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-outer-container {
+    padding: 1em 1.5em;
+    background-color: #fff;
+    width: 230px;
+    border-right: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+
+.nav-content-container .nav-main-sections-container {
+    list-style-type: none
+}
+
+.nav-main-section .nav-main-section-inner-container .nav-main-section-links {
+    background-color: lighten(link-bg-color, 10%)
+}
+
+.nav-main-section-link {
+    list-style-type: none
+}
+
+.nav-main-section-link-a {
+    text-decoration: none color: #333 width: 100% display: block padding: .5em &:hover background-color: darken($link-bg-color, 60%) color: #fff .nav-link-numbers, .icon color: #fff &:focus background-color: $red color: #fff .nav-link-numbers, .icon color: #fff
+}
+
+.link-container display: flex align-items: center justify-content: space-between .nav-link-icon,
+.nav-link-img width: 15% display: flex align-items: center justify-content: center .nav-link-img>img height: 1.5em width: 1.5em .icon font-size: 1.5em color: #555 .nav-link-text width: 80% padding: 0 .2em display: flex align-items: center justify-content: space-between .nav-link-numbers display: flex align-items: center justify-content: flex-end color: lighten(#333, 40%) hr border: none border-bottom: 1px solid #ccc // Different section styles
+.nav-main-section-header font-size: 1em margin: .2em 0 padding: .5em .nav-main-section-header-a text-decoration: none color: $red &:hover text-decoration: underline // Scroll bar styles
+::-webkit-scrollbar width: 10px::-webkit-scrollbar-track::-webkit-scrollbar-thumb background: rgba(0, 0, 0, 0.3) .navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: green;
+}
+
+.newData {
+    height: 1000px;
+}
+
+.tab {
+    float: left;
+    border: 10px solid #f1f1f1;
+    background-color: #f1f1f1;
+    width: 22%;
+    height: 100%;
+    position: fixed;
+    top: 45px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    padding-right: 600px;
+}
+
+header .navbar-brand img {
+    height: 24px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    width: 50%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current "tab button" class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
